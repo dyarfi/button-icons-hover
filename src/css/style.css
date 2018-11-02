@@ -17,67 +17,46 @@ body {
 
 /** Button Iconed **/
 .btn-iconed {
-  -webkit-transition: .15s ease-in-out;
-  -o-transition: .15s ease-in-out;
   transition: .15s ease-in-out;
   padding-left: 1.3rem;
   padding-right: 1.5rem;
   /** Icons Classes **/
-  /** -- Open Iconic and Font Awesome -- **/
+  /** -- Open Iconic, Font Awesome -- **/
   /** Span Class **/
   /** -- Icons on Hover properties -- **/
   /** Flatted button **/
 }
-
 .btn-iconed [class~=oi], .btn-iconed [class~=fa],
+.btn-iconed [class~=typcn]::before,
 .btn-iconed [class~=mdi]::before,
 .btn-iconed [class~=icon]::before {
   opacity: 0;
   -webkit-transform-origin: left right;
-      -ms-transform-origin: left right;
-       -o-transform-origin: left right;
           transform-origin: left right;
   -webkit-transform: translateX(-10px) scale(1.25);
-      -ms-transform: translateX(-10px) scale(1.25);
-       -o-transform: translateX(-10px) scale(1.25);
           transform: translateX(-10px) scale(1.25);
-  -webkit-transition: .15s ease-out;
-  -o-transition: .15s ease-out;
   transition: .15s ease-out;
 }
-
 .btn-iconed [class=spn] {
   position: relative;
   left: -9px;
   -webkit-transform-origin: left right;
-      -ms-transform-origin: left right;
-       -o-transform-origin: left right;
           transform-origin: left right;
   -webkit-transform: translateX(-9px);
-      -ms-transform: translateX(-9px);
-       -o-transform: translateX(-9px);
           transform: translateX(-9px);
-  -webkit-transition: .20s ease-in-out;
-  -o-transition: .20s ease-in-out;
   transition: .20s ease-in-out;
 }
-
 .btn-iconed:hover {
   /** -- Span on Hover properties -- **/
 }
-
 .btn-iconed:hover [class~=oi], .btn-iconed:hover [class~=fa],
-.btn-iconed:hover [class~=mdi]::before, .btn-iconed:hover [class~=icon]::before {
+.btn-iconed:hover [class~=mdi]::before, .btn-iconed:hover [class~=icon]::before, .btn-iconed:hover [class~="typcn"]::before {
   opacity: 1;
   -webkit-transform: translateX(0px) scale(0.75);
-      -ms-transform: translateX(0px) scale(0.75);
-       -o-transform: translateX(0px) scale(0.75);
           transform: translateX(0px) scale(0.75);
 }
-
 .btn-iconed:hover [class=spn] {
   left: 0px;
 }
 
 /** style.scss -- source **/
-/*# sourceMappingURL=style.css.map */

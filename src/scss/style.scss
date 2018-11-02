@@ -1,60 +1,62 @@
 /** Body CSS sample **/
 body {   
-    background:rgb(255, 247, 233);
- }
- /** Flatted button %placeholder **/
- %btn-flat {
-    border-radius: 0rem;
-    /* margin-right: 2rem; Icon sample spacing */
- }
- /** Rounded button **/
- .btn-rounded {
-    border-radius: 5rem;
-    /* margin-right: 2rem;  Icon sample spacing */
- }
- /** Button Iconed **/
- .btn {
-  &-iconed {
-    transition: .15s ease-in-out;
-    padding-left: 1.3rem;
-    padding-right: 1.5rem;
-    /** Icons Classes **/
-    /** -- Open Iconic and Font Awesome -- **/
-    [class~=oi], [class~=fa], 
-    /** -- Since Material and Iconic used ::before -- **/
-       [class~=mdi]::before, 
-       [class~=icon]::before {
-          opacity: 0;
-          transform-origin: left right;
-          transform: translateX(-10px) scale(1.25);
-          transition: .15s ease-out;
+   background:rgb(255, 247, 233);
+}
+/** Flatted button %placeholder **/
+%btn-flat {
+   border-radius: 0rem;
+   /* margin-right: 2rem; Icon sample spacing */
+}
+/** Rounded button **/
+.btn-rounded {
+   border-radius: 5rem;
+   /* margin-right: 2rem;  Icon sample spacing */
+}
+/** Button Iconed **/
+.btn {
+ &-iconed {
+   transition: .15s ease-in-out;
+   padding-left: 1.3rem;
+   padding-right: 1.5rem;
+   /** Icons Classes **/
+   /** -- Open Iconic, Font Awesome -- **/
+   [class~=oi], [class~=fa],
+   /** -- Since Material, Iconic and Typicons use ::before -- **/
+      [class~=typcn]::before,
+      [class~=mdi]::before, 
+      [class~=icon]::before {
+         opacity: 0;
+         transform-origin: left right;
+         transform: translateX(-10px) scale(1.25);
+         transition: .15s ease-out;
+  }
+  /** Span Class **/
+  [class=spn] {
+      position: relative;
+      left:-9px;
+      transform-origin: left right;
+      transform: translateX(-9px);
+      transition: .20s ease-in-out;
+  }
+   /** -- Icons on Hover properties -- **/
+  &:hover {
+   [class~=oi], [class~=fa],
+   /** -- Since Material, Iconic and Typicons use ::before -- **/
+   [class~=mdi]::before, [class~=icon]::before, [class~="typcn"]::before {
+       opacity: 1;
+       transform: translateX(0px) scale(.75);
    }
-   /** Span Class **/
+   /** -- Span on Hover properties -- **/
    [class=spn] {
-       position: relative;
-       left:-9px;
-       transform-origin: left right;
-       transform: translateX(-9px);
-       transition: .20s ease-in-out;
+       // transform: translateX(0);
+       left:0px;
    }
-    /** -- Icons on Hover properties -- **/
-   &:hover {
-    [class~=oi], [class~=fa],      
-    /* -- Since Material and Iconic used ::before -- */
-    [class~=mdi]::before, [class~=icon]::before {
-        opacity: 1;
-        transform: translateX(0px) scale(.75);
-    }
-    /** -- Span on Hover properties -- **/
-    [class=spn] {
-        // transform: translateX(0);
-        left:0px;
-    }
-   }
-   /** Flatted button **/
-   &.btn-flat {
-      @extend %btn-flat;
-   }
+   // padding-left: 2rem;
+  }
+  /** Flatted button **/
+  &.btn-flat {
+     @extend %btn-flat;
   }
  }
- /** style.scss -- source **/
+}
+/** style.scss -- source **/
