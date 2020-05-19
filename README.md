@@ -8,6 +8,8 @@ Tools :
 
 * [https://codepen.io/dyarfi/embed/yxaJvy/](https://codepen.io/dyarfi/embed/yxaJvy/)
 
+[![Video](http://i3.ytimg.com/vi/QsG_mKkhlsI/maxresdefault.jpg)](https://youtu.be/QsG_mKkhlsI)
+
 Demos :
 * [Codepen.io](https://codepen.io/dyarfi/full/yxaJvy/) 
 * [Medium](https://medium.com/p/c4cb80548613/)
